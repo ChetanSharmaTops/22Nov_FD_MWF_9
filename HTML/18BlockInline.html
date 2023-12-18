@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block vs Inline</title>
+  </head>
+  <body>
+    <!-- Can we write Inline Element into a Block Lebel Element? -->
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quaerat hic
+      laboriosam officia <span>Hey I'm Inline</span> alias ullam doloremque similique atque eius dolore
+      adipisci necessitatibus sed corporis aut inventore, labore in, sequi
+      quasi.
+    </div>
+    <!-- Yes, this is the right way writing  -->
+    <hr>
+    <!-- Can we write Block Element into a Inline Lebel Element? -->
+    <span>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quaerat hic
+      laboriosam officia <div>Hey I'm Block</div> alias ullam doloremque similique atque eius dolore
+      adipisci necessitatibus sed corporis aut inventore, labore in, sequi
+      quasi.
+    </span>
+    <!-- Never Write this kind of code  -->
+
+  </body>
+</html>
