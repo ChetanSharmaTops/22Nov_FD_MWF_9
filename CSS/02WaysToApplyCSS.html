@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ways To Apply CSS</title>
+
+    <!-- Internal CSS is applied in the head section with the help of style Tag  -->
+
+    <!-- Internal CSS applied here  -->
+    <style>
+      /* Syntax  */
+
+      /* selector{
+            property1: value1;
+            property2: value2;
+        } */
+      .Internal {
+        background-color: brown;
+        color: burlywood;
+        font-size: 30px;
+      }
+    </style>
+
+    <!-- External CSS is applied here with the help of link tag in head section  -->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Ways To Apply CSS</h1>
+    <!-- Inline CSS => It is applied in starting tag with the help of style Attribute -->
+    <p style="background-color: black; color: aliceblue; font-size: 30px">
+      Inline CSS
+    </p>
+    <p class="Internal">Internal CSS</p>
+    <p class="External">External CSS</p>
+  </body>
+</html>

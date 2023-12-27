@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+
+    <!-- Internal CSS applied here  -->
+
+    <style>
+        div[class*='box']{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+        .box-1{
+            background-color: crimson;
+        }
+        .box-2{
+            background-color: rgb(249, 114, 4);
+        }
+        .box-3{
+            background-color: rgb(117, 20, 220);
+        }
+        .box-4{
+            background-color: rgb(150, 220, 20);
+        }
+        .box-5{
+            background-color: rgb(220, 20, 187);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Attribute Selector</h1>
+    <hr>
+    <div class="box-1">Box-1</div>
+    <div class="box-2">Box-2</div>
+    <div class="box-3">Box-3</div>
+    <div class="box-4">Box-4</div>
+    <div class="box-5">Box-5</div>
+</body>
+</html>
