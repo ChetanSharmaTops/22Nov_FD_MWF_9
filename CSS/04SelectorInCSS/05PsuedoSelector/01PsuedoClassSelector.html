@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Class Selector</title>
+    <style>
+        h1{
+            background-color: crimson;
+            color: aliceblue;
+        }
+        h1:hover{
+            background-color: teal;
+            color: khaki;
+
+        }
+        button{
+            padding: 10px 30px;
+            background-color: crimson;
+            color: khaki;
+            border: 1px solid crimson;
+            border-radius: 20px;
+            font-size: 20px;
+
+        }
+        button:hover{
+            background-color: blueviolet;
+            border: 2px solid lime;
+            color: aliceblue;
+            border-radius: 10px;
+        }
+        a{
+            color: orangered;
+        }
+        a:active{
+            color: green;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Psuedo Class Selector (:)</h1>
+    <button>Hover Me</button>
+    <hr>
+    <a href="#">Click me</a>
+    <a href="#x">Click me x</a>
+    <a href="#xy">Click me xy</a>
+</body>
+</html>
