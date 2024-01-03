@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin Padding</title>
+    <!-- CSS Internal  -->
+    <style>
+        .margin{
+            border: 1px solid black;
+            background-color: crimson;
+            color: aliceblue;
+            margin: 100px;     /* All four side = 100px */ 
+            margin: 100px 200px;     /* Top-Bottom = 100px, Right-Left = 200px */  
+            margin: 100px 200px 300px;  /* Top = 100px, Right-Left = 200px , Bottom = 300px*/
+            margin: 100px 200px 300px 400px;  /* Top = 100px, Right = 200px , Bottom = 300px , Left = 400px*/ 
+        }
+        .padding{
+            border: 1px solid black;
+            background-color: crimson;
+            color: aliceblue;
+            padding: 100px;  /* All four side = 100px */   
+            padding: 100px 200px;  /* Top-Bottom = 100px, Right-Left = 200px */   
+            padding: 100px 200px 300px;  /* Top = 100px, Right-Left = 200px , Bottom = 300px*/   
+            padding: 100px 200px 300px 400px;  /* Top = 100px, Right = 200px , Bottom = 300px , Left = 400px*/   
+            
+        }
+    </style>
+  </head>
+  <body>
+    <div class="margin">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis porro
+      mollitia beatae est officia tempora suscipit dignissimos. Illum error vel
+      asperiores, repellat officia inventore dicta nobis cupiditate voluptates
+      ex sunt.
+    </div>
+    <hr />
+    <div class="padding">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis porro
+      mollitia beatae est officia tempora suscipit dignissimos. Illum error vel
+      asperiores, repellat officia inventore dicta nobis cupiditate voluptates
+      ex sunt.
+    </div>
+  </body>
+</html>
+
+
+<!-- Note : Never give above 100px margin padding to any element -->

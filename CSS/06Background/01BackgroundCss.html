@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background CSS Properties</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+      .header {
+        background-color: antiquewhite;
+      }
+      div[class*="background"] {
+        height: 500px;
+        border: 10px dashed green;
+        margin-bottom: 20px;
+        font-size: 50px;
+      }
+
+    .background-attachment{
+        background-image: url(../../Images/kankaria.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+    }
+    .background-clip{
+        background-image: url(../../Images/kankaria.webp);
+        background-repeat: no-repeat;
+        padding: 100px;
+        background-clip: border-box;
+        /* background-clip: padding-box; */
+        /* background-clip: content-box; */
+        
+    }
+    .background-color{
+        background-color: blueviolet;
+        
+    }
+    .background-image{
+        background-image: url(../../Images/kankaria.webp);
+        
+    }
+    .background-origin{
+        background-image: url(../../Images/kankaria.webp);
+        padding: 100px;
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        background-origin: padding-box;
+        background-origin: content-box;
+        
+    }
+    .background-position{
+        background-image: url(../../Images/kankaria.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 300px;
+        background-position: top;
+        background-position: left;
+        background-position: right;
+        background-position: bottom;
+        background-position: 200px 50%;
+
+        
+    }
+    .background-repeat{
+        background-image: url(../../Images/kankaria.webp);
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-repeat: repeat;
+        background-repeat: repeat-y;
+        background-repeat: space;
+        background-repeat: round;
+        background-repeat: repeat-x;
+
+        
+    }
+    .background-size{
+        background-image: url(../../Images/kankaria.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+        background-size: 500px;
+        
+    }
+    .background-shorthand{
+        background: url(../../Images/kankaria.webp)no-repeat center/cover;
+    }
+    .background-multiple{
+        background-image: url(../../Images/krishna.jpg), url(../../Images/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: 150px, cover;
+        background-position: top 10px right 10px, center;
+        background-origin: border-box;
+        background-attachment: fixed, scroll ;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Background CSS Properties</h1>
+      <ol>
+        <li>background-attachment</li>
+        <li>background-clip</li>
+        <li>background-color</li>
+        <li>background-image</li>
+        <li>background-origin</li>
+        <li>background-position</li>
+        <li>background-repeat</li>
+        <li>background-size</li>
+      </ol>
+    </div>
+    <hr />
+    <div class="background-attachment">background-attachment</div>
+    <div class="background-clip">background-clip</div>
+    <div class="background-color">background-color</div>
+    <div class="background-image">background-image</div>
+    <div class="background-origin">background-origin</div>
+    <div class="background-position">background-position</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-size">background-size</div>
+    <div class="background-shorthand">background-shorthand</div>
+    <div class="background-multiple">background-multiple</div>
+    <div class="background-multiple">background-multiple</div>
+    <div class="background-multiple">background-multiple</div>
+  </body>
+</html>

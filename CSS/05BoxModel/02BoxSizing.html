@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing </title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+
+        /* Always give these value to universal Selector  */
+
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        
+        body{
+            background-color: antiquewhite;
+        }
+        div[class*='box']{
+            background-color: blueviolet;
+            color: aliceblue;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            border: 10px solid black;
+            padding: 20px;
+        }
+        .border-box{
+            box-sizing: border-box;
+            /* Total width => width = 200px - padding (2*20 = 40px) - border (2*10 = 20px) => 140px */
+            /* Total Height => width = 200px - padding (2*20 = 40px) - border (2*10 = 20px) => 140px */
+        }
+        .content-box{
+            box-sizing: content-box;
+            /* Total width => width = 200px + padding (2*20 = 40px) + border (2*10 = 20px) => 260px */
+            /* Total Height => width = 200px + padding (2*20 = 40px) + border (2*10 = 20px) => 260px */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="border-box">Border-box = 140px</div>
+    <hr>
+    <div class="content-box">Content-box = 260px</div>
+</body>
+</html>
+
