@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Flex</title>
+    <!-- CSS  -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 1px solid black;
+      }
+      img {
+        width: 100%;
+      }
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .row {
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        /* flex-direction: row-reverse; */
+        /* flex-wrap: nowrap; */
+        /* align-content: center; */
+        /* gap: 50px; */
+
+      }
+      div[class*="box"] {
+        width: 200px;
+        height: 200px;
+        border: 3px solid blueviolet;
+      }
+      .box-2{
+        /* order: 1; */
+        /* flex-grow: 1; */
+        /* By default = 0 */
+        /* flex-shrink: 5; */
+        /* By default = 1 */
+        /* flex-basis: 50%; */
+        align-self: center;
+      }
+      .box-1{
+        /* order: 2; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="box-1">Box-1</div>
+        <div class="box-2">Box-2</div>
+        <div class="box-3">Box-3</div>
+        <div class="box-4">Box-4</div>
+      </div>
+    </div>
+  </body>
+</html>

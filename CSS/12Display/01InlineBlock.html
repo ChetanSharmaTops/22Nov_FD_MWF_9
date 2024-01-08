@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Block</title>
+    <style>
+        *{
+            border: 1px solid black;
+        }
+        div[class*='box']{
+            padding: 20px;
+            border: 5px dashed red ;
+            display: block;
+            display: inline;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    before
+    <div>Block</div>
+    After
+    <hr>
+    before
+    <span>Inline</span>
+    After
+    <hr>
+    <div class="container">
+        <div class="box-1">Box-1</div>
+        <div class="box-2">Box-2</div>
+        <div class="box-3">Box-3</div>
+    </div>
+</body>
+</html>
