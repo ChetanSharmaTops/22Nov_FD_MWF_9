@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position In CSS</title>
+    <style>
+      div[class*="box"] {
+        height: 500px;
+        border: 5px solid black;
+        margin: 10px 0px;
+        font-size: 50px;
+      }
+      .box-1 {
+        background-color: blue;
+      }
+      .box-2 {
+        background-color: rgb(255, 0, 0);
+      }
+      .box-3 {
+        background-color: rgb(0, 255, 234);
+      }
+      .box-4 {
+        background-color: rgb(183, 0, 255);
+        position: relative;
+        text-align: center;
+      }
+      .box-5 {
+        background-color: rgb(255, 166, 0);
+      }
+
+      .fixed {
+        background-color: black;
+        color: white;
+        font-size: 40px;
+        border: 5px solid lime;
+        position: fixed;
+        top: 0px;
+        right: 400px;
+        z-index: 10;
+      }
+      .sticky {
+        border: 5px solid lime;
+        outline: 5px dashed rgb(149, 6, 232);
+        font-size: 50px;
+        text-align: center;
+        color: antiquewhite;
+        position: sticky;
+        top: 0px;
+      }
+      div[class*="box-ab"] {
+        height: 200px;
+        width: 200px;
+        border: 5px solid rgb(248, 2, 2);
+        font-size: 40px;
+        position: absolute;
+      }
+      .box-ab-1{
+        background-color: yellowgreen;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+      }
+      .box-ab-2{
+        background-color: orangered;
+        top: 0px;
+        right: 0px;
+    
+      }
+      .box-ab-3{
+        background-color: blue;
+        top: 120px;
+        left: 550px;
+        z-index: 2;
+      }
+      .box-ab-4{
+        background-color: brown;
+        bottom: 0px;
+        left: 0px;
+      }
+      .box-ab-5{
+        background-color: green;
+        bottom: 0px;
+        right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Position In CSS</h1>
+
+    <ol>
+      <li>Relative</li>
+      <li>Absolute</li>
+      <li>Sticky</li>
+      <li>Fixed</li>
+      <li>Static</li>
+      <!-- static => The element is positioned according to the normal flow of the
+      document. The top, right, bottom, left, and z-index properties have no
+      effect. This is the default value. -->
+    </ol>
+
+    <hr />
+    <div class="fixed">Fixed</div>
+    <div class="box-1">Box-1</div>
+    <div class="box-2">
+      Box-2
+      <div class="sticky">Sticky</div>
+    </div>
+    <div class="box-3">Box-3</div>
+    <div class="box-4">Box-4
+        <div class="box-ab-1">Box-ab-1</div>
+        <div class="box-ab-2">Box-ab-2</div>
+        <div class="box-ab-3">Box-ab-3</div>
+        <div class="box-ab-4">Box-ab-4</div>
+        <div class="box-ab-5">Box-ab-5</div>
+    </div>
+    <div class="box-5">Box-5</div>
+  </body>
+</html>
