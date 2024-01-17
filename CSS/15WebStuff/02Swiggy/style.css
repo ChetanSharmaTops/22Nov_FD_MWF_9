@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+/* #header{
+} */
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+        padding: 50px 0px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.al-it-center{
+    align-items: center;
+}
+.col-60{
+    width: 60%;
+}
+.col-40{
+    width: 40%;
+    background-color: blueviolet;
+}
+h3{
+    color: orange;
+    font-size: 50px;
+}
+.btn>button{
+    padding: 8px 30px;
+    font-size: 16px;
+    background-color: black;
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 0px 20px;
+}
+.main-text{
+    padding: 50px 0px 0px;
+}
+h1{
+    font-size: 40px;
+}
+h1+p{
+    font-size: 24px;
+    color: #686b78;
+    padding: 20px 0px;
+}
+.inp-field{
+    margin: 30px 0px;
+    position: relative;
+}
+input{
+    width: 80%;
+    padding: 14px 20px;
+    font-size: 20px;
+    border: 2px solid orange;
+}
+input+button{
+    padding: 18px 30px;
+    font-size: 16px;
+    background-color: #fc8019;
+    color: aliceblue;
+    font-weight: bold;
+    margin-left: -4px;
+    border: 1px solid orange;
+}
+input::placeholder{
+    font-size: 20px;
+}
+span{
+    position: absolute;
+    display: inline-block;
+    padding: 10px 20px;
+    top: 6px;
+    right: 150px;
+    color: #8e8f92;
+}
+span:hover{
+    background-color: #cfcfd3;
+
+}
+.text>p{
+    color: #a9abb2;
+    font-size: 16px;
+
+}
+p+p{
+    font-weight: 600;
+    font-size: 16px;
+    color: black !important;
+    /* word-spacing: 10px; */
+    font-size: 20px !important;
+    padding: 20px 0px;
+}
