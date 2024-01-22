@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation IN CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 100vh;
+            border: 3px solid lime;
+            background-color: blueviolet;
+            color: aliceblue;
+            text-align: center;
+            font-size: 30px;
+            animation-name: lightroom;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+           
+        }
+        @keyframes lightroom {
+            0%{
+                background-color: brown;
+            }
+            20%{
+                background-color: teal;
+            }
+            40%{
+                background-color: greenyellow;
+            }
+            60%{
+                background-color: rebeccapurple;
+            }
+            80%{
+                background-color: crimson;
+            }
+            100%{
+                background-color: blue;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

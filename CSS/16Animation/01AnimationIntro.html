@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation IN CSS</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 3px solid lime;
+            background-color: blueviolet;
+            color: aliceblue;
+            text-align: center;
+            font-size: 30px;
+            animation-name: jadu;
+            animation-duration: 5s;
+            /* animation-iteration-count: 2; */
+            animation-iteration-count: infinite;
+            /* animation-delay: 3s; */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-direction: reverse; */
+            /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+            /* animation-timing-function: steps(2); */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-timing-function: linear; */
+            /* animation-fill-mode: backwards; */
+            /* animation-fill-mode: forwards; */
+        }
+        @keyframes jadu {
+            from{
+                margin-left: 0px;
+            }
+            to{
+                margin-left: 1100px;
+                /* margin-right: 0px; */
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">This Is The Jadu of CSS</div>
+</body>
+</html>
