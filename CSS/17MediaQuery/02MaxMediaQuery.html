@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Media Query</title>
+
+    <!-- CSS  -->
+
+    <style>
+      body {
+        background-color: crimson;
+        color: aliceblue;
+      }
+
+      h1::before {
+        content: "Original ";
+      }
+
+      /* Max Media Query  */
+
+      /* 1400px */
+
+      @media (max-width: 1400px) {
+        body {
+          background-color: yellow;
+          color: black;
+        }
+
+        h1::before {
+          content: "1400px ";
+        }
+      }
+
+      /* 1200px  */
+
+      @media (max-width: 1200px) {
+        body {
+          background-color: purple;
+          color: aliceblue;
+        }
+
+        h1::before {
+          content: "1200px ";
+        }
+      }
+
+      /* 992px  */
+
+      @media (max-width: 992px) {
+        body {
+          background-color: green;
+          color: aliceblue;
+        }
+
+        h1::before {
+          content: "992px ";
+        }
+      }
+
+      /* 768px  */
+
+      @media (max-width: 768px) {
+        body {
+          background-color: black;
+          color: aliceblue;
+        }
+
+        h1::before {
+          content: "768px ";
+        }
+      }
+
+      /* 576 px  */
+
+      @media (max-width: 576px) {
+        body {
+          background-color: teal;
+          color: aliceblue;
+        }
+
+        h1::before {
+          content: "576px ";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media Query</h1>
+  </body>
+</html>

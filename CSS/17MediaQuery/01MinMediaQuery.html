@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min Media Query</title>
+
+    <!-- CSS  -->
+
+    <style>
+      body {
+        background-color: crimson;
+        color: aliceblue;
+      }
+
+      h1::before {
+        content: "Original ";
+      }
+
+      /* Media Query */
+
+      /* // X-Small devices (portrait phones, less than 576px) */
+      /* // No media query for `xs` since this is the default in Bootstrap */
+
+      /* // Small devices (landscape phones, 576px and up) */
+      @media (min-width: 576px) {
+           body {
+        background-color: teal;
+        color: aliceblue;
+      }
+
+      h1::before {
+        content: "576px ";
+      }
+      }
+
+      /* // Medium devices (tablets, 768px and up) */
+      @media (min-width: 768px) {
+           body {
+        background-color: black;
+        color: aliceblue;
+      }
+
+      h1::before {
+        content: "768px ";
+      }
+      }
+
+      /* // Large devices (desktops, 992px and up) */
+      @media (min-width: 992px) {
+           body {
+        background-color: green;
+        color: aliceblue;
+      }
+
+      h1::before {
+        content: "992px ";
+      }
+      }
+
+      /* // X-Large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) {
+           body {
+        background-color: purple;
+        color: aliceblue;
+      }
+
+      h1::before {
+        content: "1200px ";
+      }
+      }
+
+      /* // XX-Large devices (larger desktops, 1400px and up) */
+      @media (min-width: 1400px) {
+           body {
+        background-color: yellow;
+        color: black;
+      }
+
+      h1::before {
+        content: "1400px ";
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media Query</h1>
+  </body>
+</html>
