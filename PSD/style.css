@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.col-50 {
+  width: 50%;
+}
+nav {
+  padding: 30px 0px;
+  
+}
+input[type*="checkbox"] {
+  display: none;
+  width: 50px;
+  height: 50px;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px 80px 10px 0px;
+}
+a {
+  text-decoration: none;
+  font-size: 21px;
+  color: #232323;
+  font-weight: 900;
+  font-family: "Lato";
+}
+button {
+  font-size: 20px;
+  color: #232323;
+  font-weight: 900;
+  font-family: "Lato";
+  border-radius: 5px;
+  border: 3px solid #232323;
+  background-color: white;
+  padding: 10px 30px;
+}
+.main-text {
+  padding: 50px 60px 0px 0px;
+}
+h1 {
+  font-size: 75px;
+  color: #232323;
+  font-weight: 700;
+  font-family: "Cardo";
+  padding: 0px 100px 10px 0px;
+}
+h1 + p {
+  font-size: 17px;
+  color: #232323;
+  font-weight: 400;
+  font-family: "Lato";
+  padding-right: 70px;
+}
+p + button {
+  font-size: 21px;
+  color: #e9e7e7;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+  border-radius: 5px;
+  background-color: #232323;
+  padding: 10px 35px;
+  margin: 20px 0px;
+}
+img {
+  width: 100%;
+}
+
+/* Section 1 css  */
+
+#section1 {
+  background-color: #232323;
+}
+.text-section {
+  width: 35%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0px;
+}
+h3 {
+  font-size: 60px;
+  color: #e9e7e7;
+  font-weight: 700;
+  font-family: "Cardo";
+  text-align: center;
+  padding: 10px 0px;
+}
+h3 + p {
+  font-size: 17px;
+  color: #e9e7e7;
+  font-weight: 400;
+  font-family: "Lato";
+  padding: 10px;
+}
+button {
+  font-size: 21px;
+  color: #e9e7e7;
+  font-weight: 900;
+  font-family: "Lato";
+  border-radius: 5px;
+  background-color: #232323;
+  border: 3px solid #e9e7e7;
+  padding: 10px 35px;
+}
+
+/* Section 2 */
+
+.section2-wrapper {
+  padding: 100px 0px;
+}
+.col-33 {
+  width: 33%;
+}
+.card {
+  width: 90%;
+}
+.card-img {
+  padding: 10px 0px;
+}
+.card span {
+  border: 3px solid black;
+  display: inline-block;
+  height: 1px;
+  width: 15%;
+}
+h4 {
+  font-size: 35px;
+  color: #232323;
+  font-weight: 700;
+  font-family: "Cardo";
+  padding: 10px 75px 10px 0px;
+}
+h4 + p {
+  font-size: 16px;
+  color: #232323;
+  font-weight: 400;
+  font-family: "Lato";
+}
+
+/* section 3  */
+
+.section3-wrapper {
+  padding: 100px 0px;
+}
+.aeroplane {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.aero {
+  width: 10%;
+  margin: auto;
+}
+h2 {
+  font-size: 98px;
+  color: #232323;
+  font-weight: 700;
+  font-family: "Cardo";
+  padding: 30px 0px 20px;
+}
+h2 + p {
+  font-size: 25px;
+  color: #232323;
+  font-weight: 900;
+  font-family: "Lato";
+}
+h2 > span {
+  text-decoration: underline;
+}
+.mybar{
+  display: none;
+}

@@ -40,9 +40,32 @@
         .navbar {
           display: none;
         }
+        nav{
+          position: relative;
+        }
         input:checked + .navbar {
           display: block;
+          position: absolute;
+          width: 50%;
+          border: 3px solid black;
+          color: aliceblue;
+          background-color: blueviolet;
+          top: 47px;
+          animation-name: jadu;
+          animation-duration: 2s;
         }
+
+        @keyframes jadu {
+          from{
+            margin-left: -200px;
+
+          }
+          to{
+            margin-left: 100px;
+          }
+
+        }
+
       }
     </style>
   </head>
