@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 2px solid black;
+
+        }
+        .parent{
+            display: grid;
+            /* grid-template-columns: 200px 300px; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(150px, auto);
+            gap: 10px;
+            font-size: 30px;
+        }
+        .child-1{
+            grid-column: 1/3;
+            grid-row: 1/3;
+            background-color: teal;
+            color: khaki;
+        }
+        .child-6{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            background-color: blue;
+            color: aliceblue;
+        }
+        .child-5{
+            grid-column: 2/4;
+            grid-row: 3/4;
+            background-color: red;
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child-1">child-1</div>
+        <div class="child-2">child-2</div>
+        <div class="child-3">child-3</div>
+        <div class="child-4">child-4</div>
+        <div class="child-5">child-5</div>
+        <div class="child-6">child-6</div>
+    </div>
+</body>
+</html>
