@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prespective In Transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        body{
+            background-color: azure;
+        }
+        .parent{
+            width: 90%;
+            height: 500px;
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: tan;
+            border: 3px solid blueviolet;
+            outline: 3px dashed green;
+            position: relative;
+        }
+        div[class*='child']{
+            width: 250px;
+            height: 250px;
+            border: 3px solid lime;
+            background-color: crimson;
+            color: aliceblue;
+            position: absolute;
+        }
+        .child-1{
+            top: 0;
+            left: 0;
+        }
+        .child-2{
+            bottom: 0;
+            left: 0;
+        }
+        .child-3{
+            top: 0;
+            right: 0;
+        }
+        .child-4{
+            bottom: 0;
+            right: 0;
+        }
+        .inp{
+            width: 40%;
+            margin: auto;
+            border: 1px solid black;
+            position: relative;
+        }
+        input{
+            width: 100%;
+            height: 55px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        .posi-ab{
+            padding: 10px 30px;
+            background-color: blue;
+            color: aliceblue;
+            font-size: 20px;
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child-1">Child-Left</div>
+        <div class="child-2">Child-Bottom</div>
+        <div class="child-3">Child-Right</div>
+        <div class="child-4">Child-Top</div>
+        <div class="inp">
+            <input type="text">
+            <button class="posi-ab">Click Me</button>
+        </div>
+    </div>
+</body>
+</html>
