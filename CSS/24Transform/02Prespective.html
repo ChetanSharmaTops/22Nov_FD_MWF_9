@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prespective In Transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        body{
+            background-color: azure;
+        }
+        .parent{
+            width: 90%;
+            height: 500px;
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: tan;
+            border: 3px solid blueviolet;
+            outline: 3px dashed green;
+        }
+        div[class*='child']{
+            width: 250px;
+            height: 250px;
+            border: 3px solid lime;
+            background-color: crimson;
+            color: aliceblue;
+        }
+        .child-1:hover{
+            transform: perspective(300px) rotateY(45deg);
+        }
+        .child-2:hover{
+            transform: perspective(300px) rotateX(45deg);
+        }
+        .child-3:hover{
+            transform: perspective(300px) rotateY(-45deg);
+        }
+        .child-4:hover{
+            transform: perspective(300px) rotateX(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child-1">Child-Left</div>
+        <div class="child-2">Child-Bottom</div>
+        <div class="child-3">Child-Right</div>
+        <div class="child-4">Child-Top</div>
+    </div>
+</body>
+</html>
