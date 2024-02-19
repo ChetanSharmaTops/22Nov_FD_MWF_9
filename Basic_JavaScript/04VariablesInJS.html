@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables In JS</title>
+  </head>
+  <body>
+    <h1>Variables In JS</h1>
+
+    <script>
+      // Variables In JS
+
+      // We have 3 variables In JS
+      // We have 2 variables and 1 constant In JS
+
+      // var  => It was used before ES6
+      // let  => It was introduced in ES6
+      // const => Constant variable
+
+      // var
+
+      // var name; // Declaration
+      // name = 'kartik' // Assignement
+
+      var name = "Kartik"; // Initialization and Declaration
+      var name = "Kartik kumar"; // Re-Declaration is possible
+      name = "Kartik Parmar"; // Re-Assignment is possible
+      console.log(name);
+
+      // let
+
+      let marks = 90; // Initialization and Declaration
+      //   let marks = 92; //  Re-Declaration is not possible    // SyntaxError: Identifier 'marks' has already been declared
+      marks = 95; // Re-Assignment is possible
+      console.log(marks);
+
+      //   const
+
+      const fav_Actress = "Rashmika Mandanna"; // Initialization and Declaration
+      //   const fav_Actress = "Alia bhatt";  //  Re-Declaration is not possible
+      // fav_Actress = "Kriti Sanon"  // Re-Assignment is not possible  // TypeError: Assignment to constant variable.
+      console.log(fav_Actress);
+    </script>
+  </body>
+</html>
