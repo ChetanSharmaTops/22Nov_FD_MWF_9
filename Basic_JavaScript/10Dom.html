@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Get HTML Data</h1>
+
+    <!-- <input type="text"  id="first" class="same" name="first" value="anything"> -->
+    <input type="text"  id="first" class="same" name="first" onblur="shoewValue()">
+    <!-- <input type="text"  id="second" class="same" name="second">
+    <input type="text"  id="" class="same" name="second">
+    <input type="text"  id="" class="same" name="first">
+    <input type="text"  id="" class="same" name="second"> -->
+
+    <script>
+
+        // 1. ID 
+
+
+        // let inpData = document.getElementById('first')
+        // // let inpData = document.getElementById('first').value
+        // console.log(inpData);
+        // console.log(inpData.value);
+
+
+        // 2. ClassName
+
+        // let inpData = document.getElementsByClassName('same')
+        // // let inpData = document.getElementById('first').value
+        // console.log(inpData);
+        // console.log(inpData[0].value);
+
+
+        // 3. name
+
+        // let inpData = document.getElementsByName('first')
+        // // let inpData = document.getElementById('first').value
+        // console.log(inpData);
+        // console.log(inpData[0].value);
+
+
+
+        // 4. Tag name
+
+        // let inpData = document.getElementsByTagName('input')
+        // // let inpData = document.getElementById('first').value
+        // console.log(inpData);
+        // console.log(inpData[0].value);
+
+
+
+        // 5. querySelector
+
+        // let inpData = document.querySelector('input')
+        // let inpData = document.querySelector('.same')
+        // let inpData = document.querySelector('#first')
+        // // let inpData = document.getElementById('first').value
+        // console.log(inpData);
+        // console.log(inpData.value);
+        
+
+
+        // 5. querySelectorAll
+
+        // let inpData = document.querySelectorAll('input')
+        // // let inpData = document.querySelectorAll('.same')
+        // // let inpData = document.getElementById('first').value
+        // console.log(inpData);
+        // console.log(inpData[0].value);
+
+
+        // function shoewValue() {
+        //     let a  = document.getElementById('first')
+        //     console.log(a.value);
+        // }
+
+    </script>
+
+</body>
+</html>
