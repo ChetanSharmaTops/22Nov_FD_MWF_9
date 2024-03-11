@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding Card</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 90%;
+        margin: auto;
+        background-color: antiquewhite;
+      }
+      #row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      img {
+        width: 250px;
+        height: 250px;
+      }
+      .col-25 {
+        width: 25%;
+        text-align: center;
+      }
+      .card {
+        background-color: tan;
+        color: crimson;
+        margin: 10px;
+      }
+      h2 {
+        padding: 10px 0px;
+        font-size: 30px;
+      }
+      p {
+        padding-bottom: 20px;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Adding Card</h1>
+    <div class="container">
+      <div id="row"></div>
+    </div>
+
+    <script>
+      let arr = [
+        "../../Images/product.jpeg",
+        "../../Images/puma.avif",
+        "../../Images/puma2.jpg",
+      ];
+
+      function addingCards() {
+        arr.forEach((element) => {
+          let node = document.createElement("div");
+          node.setAttribute("class", "col-25");
+          let text = `<div class="card">
+                <div class="product-img">
+                    <img src="${element}" alt="">
+                    </div>
+                    <h2>Nike Shoes</h2>
+                    <p>$65 <del>$150</del></p>
+                    </div>`;
+          node.innerHTML = text;
+          document.getElementById("row").appendChild(node);
+        });
+      }
+      addingCards();
+    </script>
+  </body>
+</html>
