@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to jQuery</title>
+  </head>
+  <body>
+    <h1>Introduction to jQuery</h1>
+    <p>h1 p click karte hi m hide ho jaunga </p>
+    <!-- Downloaded file  -->
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- CDN File  -->
+
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script> -->
+
+    <script>
+      //   console.log(jQuery);
+      //   console.log($);
+
+      //   Syntax
+
+      // $(Selector).action()
+
+      // $(document).ready(function () {
+
+      //     // do everthing
+
+      // })
+
+      $(document).ready(function () {
+        //   $(function () {
+        // do everthing
+
+        $("h1").click(function () {
+          $("p").hide();
+        });
+      });
+    </script>
+  </body>
+</html>

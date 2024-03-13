@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fade Effect In jQuery</title>
+  </head>
+  <body>
+    <hr />
+    <h1>Fade Effect In jQuery</h1>
+    <div id="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora a
+      aliquid assumenda eum deserunt quisquam sint recusandae dolorem, iste
+      pariatur temporibus accusantium, ipsa officia error numquam nihil, nam
+      facere.
+    </div>
+    <hr />
+    <button id="btnfadeIn">Fade In</button>
+    <button id="btnFadeOut">Fade Out</button>
+    <button id="btnFadeToggle">Fade Toggle</button>
+    <button id="btnFadeTo">Fade To</button>
+    <hr />
+    <!-- jQuery  -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- CSS Script  -->
+
+    <script>
+      $("*").css({ padding: "0px", margin: "0px", boxSizing: "border-box" });
+      $("body").css({ backgroundColor: "tan", textAlign: "center" });
+      $("button").css({
+        backgroundColor: "brown",
+        color: "khaki",
+        padding: "10px 30px",
+        margin: "10px",
+      });
+      $("#box").css({
+        backgroundColor: "blue",
+        color: "white",
+        width: "300px",
+        margin: "10px auto",
+        padding: "10px",
+        border: "5px solid lime",
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+
+        // fade In Effect
+
+        $("#btnfadeIn").click(function () {
+          $("#box").fadeIn(2000);
+          console.log("Box fadeIn");
+        });
+
+        // Fade Out Effect
+
+        $("#btnFadeOut").click(function () {
+          $("#box").fadeOut(3000);
+          console.log("Box fadeOut");
+        });
+
+        // Fade Toggle Effect
+
+        $("#btnFadeToggle").click(function () {
+          $("#box").fadeToggle(4000);
+          console.log("Box fadeToggle");
+        });
+
+        // Fade To Effect
+
+        $("#btnFadeTo").click(function () {
+          $("#box").fadeTo(2000, 0.5);
+          console.log("Box fadeTo");
+        });
+      });
+    </script>
+  </body>
+</html>

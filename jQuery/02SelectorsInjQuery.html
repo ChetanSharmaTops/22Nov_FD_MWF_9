@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors In jQuery</title>
+  </head>
+  <body>
+    <h1 id="heading" class="heading-class">Selectors In jQuery</h1>
+
+    <!-- jQuery  -->
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Element Selectors
+
+        $("h1").click(function () {
+          $("body").css({ backgroundColor: "teal" });
+          console.log("Element Selectors");
+        });
+
+        // Id Selectors
+
+        $("#heading").click(function () {
+          $("body").css({ backgroundColor: "red" });
+          console.log("ID Selectors");
+        });
+
+        // class Selectors
+
+        $(".heading-class").click(function () {
+          $("body").css({ backgroundColor: "blue" });
+          console.log("Class Selectors");
+        });
+
+        // Unviversal  Selectors
+
+        $("*").click(function () {
+          $("body").css({ backgroundColor: "Khaki" });
+          console.log("Unviversal Selectors");
+        });
+      });
+    </script>
+  </body>
+</html>
