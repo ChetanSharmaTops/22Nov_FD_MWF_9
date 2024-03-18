@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ancestor Traversing In jQuery</title>
+
+    <!-- CSS  -->
+
+    <style>
+      * {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    body
+    <div class="great-grand-parent">
+      great-grand-parent
+      <div class="grand-parent">
+        grand-parent
+        <div class="parent">
+          parent
+          <div class="child">Child One</div>
+          <div class="child">Child Two</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery  -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- CSS Script  -->
+
+    <script>
+      $("body").css({ backgroundColor: "tan", textAlign: "center" });
+      $("#box").css({
+        backgroundColor: "blue",
+        color: "white",
+        width: "300px",
+        margin: "10px auto",
+        padding: "10px",
+        border: "5px solid lime",
+      });
+      $("button").css({
+        backgroundColor: "brown",
+        color: "khaki",
+        padding: "10px 30px",
+        margin: "10px",
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        //   parent
+
+        // $(".child").parent().css({ border: "4px solid green" });
+        // $(".parent").parent().css({ border: "4px solid blue" });
+        // $(".grand-parent").parent().css({ border: "4px solid crimson" });
+        // $(".great-grand-parent").parent().css({ border: "4px solid black" });
+        // $("body").parent().css({ border: "4px solid teal" });
+
+
+        //   parents
+
+        // $(".child").parents().css({ border: "4px solid green" });
+        // $(".parent").parents().css({ border: "4px solid blue" });
+        // $(".grand-parent").parents().css({ border: "4px solid crimson" });
+        // $(".great-grand-parent").parents().css({ border: "4px solid black" });
+        // $("body").parents().css({ border: "4px solid teal" });
+
+        //   parents
+
+        $(".child").parentsUntil(".grand-parent").css({ border: "4px solid green" });
+        // $(".parent").parentsUntil().css({ border: "4px solid blue" });
+        // $(".grand-parent").parentsUntil().css({ border: "4px solid crimson" });
+        // $(".great-grand-parent").parentsUntil().css({ border: "4px solid black" });
+        // $("body").parentsUntil().css({ border: "4px solid teal" });
+      });
+    </script>
+  </body>
+</html>

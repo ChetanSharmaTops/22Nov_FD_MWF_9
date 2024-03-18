@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Event In jQuery</title>
+  </head>
+  <body>
+    <hr />
+    <h1>Mouse Event In jQuery</h1>
+    <div id="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora a
+      aliquid assumenda eum deserunt quisquam sint recusandae dolorem, iste
+      pariatur temporibus accusantium, ipsa officia error numquam nihil, nam
+      facere.
+    </div>
+    <hr />
+    <hr />
+    <!-- jQuery  -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- CSS Script  -->
+
+    <script>
+      $("*").css({ padding: "0px", margin: "0px", boxSizing: "border-box" });
+      $("body").css({ backgroundColor: "tan", textAlign: "center" });
+      $("#box").css({
+        backgroundColor: "blue",
+        color: "white",
+        width: "300px",
+        margin: "10px auto",
+        padding: "10px",
+        border: "5px solid lime",
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        // Mouse enter Event
+
+        $("#box").mouseenter(function () {
+          $("body").css({backgroundColor: "pink"});
+        });
+
+        // Mouse leave Event
+
+        $("#box").mouseleave(function () {
+          $("body").css({backgroundColor: "crimson"});
+        });
+
+
+        
+
+      });
+    </script>
+  </body>
+</html>
+ 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Key Event In jQuery</title>
+  </head>
+  <body>
+    <hr />
+    <h1>Key Event In jQuery</h1>
+    <div id="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora a
+      aliquid assumenda eum deserunt quisquam sint recusandae dolorem, iste
+      pariatur temporibus accusantium, ipsa officia error numquam nihil, nam
+      facere.
+    </div>
+    <hr />
+    <input type="text" id="inp" />
+    <hr />
+    <!-- jQuery  -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- CSS Script  -->
+
+    <script>
+      $("*").css({ padding: "0px", margin: "0px", boxSizing: "border-box" });
+      $("body").css({ backgroundColor: "tan", textAlign: "center" });
+      $("#box").css({
+        backgroundColor: "blue",
+        color: "white",
+        width: "300px",
+        margin: "10px auto",
+        padding: "10px",
+        border: "5px solid lime",
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        // key Up Event
+
+        $("#inp").keyup(function () {
+          $("body").css({backgroundColor: "blue"});
+        });
+
+        // key Down Event
+
+        // $("#inp").keydown(function () {
+        //   $("body").css({backgroundColor: "crimson"});
+        // });
+
+
+        // key Press Event
+
+        $("#inp").keypress(function () {
+          $("body").css({backgroundColor: "teal"});
+        });
+
+      });
+    </script>
+  </body>
+</html>
+ 

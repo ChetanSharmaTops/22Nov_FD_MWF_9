@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter Traversing In jQuery</title>
+
+    <!-- CSS  -->
+
+    <style>
+      * {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    body
+    <div class="great-grand-parent">
+      great-grand-parent
+      <div class="grand-parent">
+        grand-parent
+        <div class="parent">
+          parent-1
+          <div class="child">Child One</div>
+          <div class="child">Child Two</div>
+        </div>
+        <div class="parent magic">
+          parent-2
+          <div class="child">Child One</div>
+          <div class="child">Child Two</div>
+        </div>
+        <div class="parent">
+          parent-3
+          <div class="child">Child One</div>
+          <div class="child">Child Two</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery  -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- CSS Script  -->
+
+    <script>
+      $("body").css({ backgroundColor: "tan", textAlign: "center" });
+      $("#box").css({
+        backgroundColor: "blue",
+        color: "white",
+        width: "300px",
+        margin: "10px auto",
+        padding: "10px",
+        border: "5px solid lime",
+      });
+      $("button").css({
+        backgroundColor: "brown",
+        color: "khaki",
+        padding: "10px 30px",
+        margin: "10px",
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        //   Filter
+
+        $(".parent").siblings().css({ border: "4px solid blue" });
+        $(".parent").filter('.magic').css({ border: "4px solid crimson" });
+       
+        
+        
+        
+        
+       
+      });
+    </script>
+  </body>
+</html>
